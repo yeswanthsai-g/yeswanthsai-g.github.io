@@ -1,117 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Gopisetty Yeswanth Sai</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G. Yeswanth Sai</title>
 
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #222;
-            line-height: 1.7;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #222;
+    line-height: 1.6;
+}
 
-        .container {
-            max-width: 900px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
 
-        h1 {
-            font-size: 32px;
-            margin-bottom: 5px;
-        }
+header {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
 
-        h2 {
-            margin-top: 50px;
-            font-size: 22px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-        }
+.profile-img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
 
-        p {
-            margin: 10px 0;
-        }
+.header-text h1 {
+    margin: 0;
+    font-size: 32px;
+}
 
-        a {
-            color: #0056b3;
-            text-decoration: none;
-        }
+.header-text p {
+    margin: 5px 0;
+    font-size: 16px;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
+.header-text a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+}
 
-        .profile-img {
-            width: 220px;
-            height: auto;
-            margin-top: 20px;
-        }
+section {
+    background: white;
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
+h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+}
 
-        th, td {
-            padding: 10px;
-            border: 1px solid #ddd;
-            text-align: left;
-        }
+ul {
+    padding-left: 20px;
+}
 
-        ul {
-            padding-left: 20px;
-        }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
 
-        .top-links {
-            margin-top: 8px;
-        }
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
 
-        footer {
-            margin-top: 60px;
-            font-size: 14px;
-            color: #777;
-        }
-    </style>
+th {
+    background-color: #f0f2f5;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 14px;
+    color: #777;
+}
+</style>
 </head>
 
 <body>
 
 <div class="container">
 
-    <h1>Gopisetty Yeswanth Sai</h1>
-    <p>Ph.D. Scholar, Department of Computer Science and Engineering</p>
-    <p>Indian Institute of Technology Hyderabad</p>
-
-    <div class="top-links">
-        Email: cs25resch11004@iith.ac.in |
-        <a href="linkedin.com/in/gopisetty-yeswanth-sai-5059481a4" target="_blank">LinkedIn</a>
-    </div>
-
-    <!-- Rectangular image (optional) -->
-    <!-- Remove this line if you don't want a photo -->
+<header>
     <img src="profile.jpg" alt="Profile Photo" class="profile-img">
 
+    <div class="header-text">
+        <h1>G. Yeswanth Sai</h1>
+        <p>Ph.D. Scholar, Department of Computer Science and Engineering</p>
+        <p>Indian Institute of Technology Hyderabad</p>
+        <p>
+            Email: your_email@iith.ac.in |
+            <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a>
+        </p>
+    </div>
+</header>
+
+<section>
     <h2>About</h2>
     <p>
-        I am a Ph.D. scholar at IIT Hyderabad working in the area of similarity search
-        and large-scale data systems. My broader interests include coding theory,
-        distributed storage systems, and efficient algorithm design.
+        I am a first-year Ph.D. scholar in the Department of Computer Science and Engineering
+        at IIT Hyderabad, working under Prof. Rameshwar Pratap.
+        My research focuses on improving similarity search in practice,
+        with interests spanning efficient algorithm design , distributed storage systems,
+        and coding theory.
     </p>
+</section>
 
+<section>
     <h2>Research Interests</h2>
     <ul>
         <li>Similarity Search</li>
         <li>Algorithm Design</li>
         <li>Distributed Storage Systems</li>
+        <li>MDS Convertible Codes</li>
         <li>Coding Theory</li>
     </ul>
+</section>
 
+<section>
     <h2>Publications</h2>
     <p>
         <strong>
@@ -123,36 +156,42 @@
         <strong>G. Yeswanth Sai</strong>; Xiangliang Kong.<br>
         IEEE International Symposium, 2025.
     </p>
+</section>
 
+<section>
     <h2>Projects</h2>
 
     <p>
         <strong>On Low Field Size Constructions of Access-Optimal Convertible Codes</strong><br>
         Jun 2024 – Feb 2025<br>
-        Focused on reducing field size requirements and improving access efficiency
-        in systematic MDS code conversions.
+        Focused on reducing field size requirements and improving access efficiency in systematic MDS codes.
     </p>
 
     <p>
         <strong>Image Classification with Text and Graph Integration</strong><br>
         Mar 2024 – May 2024<br>
-        Multimodal learning using BERT and InceptionV3 on Flickr datasets.
+        Multimodal deep learning using BERT and InceptionV3 on Flickr datasets.
     </p>
 
     <p>
         <strong>Route Planning using Reinforcement Learning and Battery Optimization in PHEVs</strong><br>
         Jan 2021 – Apr 2021<br>
-        Implemented Q-learning and SARSA in grid-based routing with battery optimization.
+        Implemented Q-learning and SARSA in a grid-based routing environment with battery optimization.
     </p>
 
+</section>
+
+<section>
     <h2>Technical Skills</h2>
     <ul>
+        <li>Algorithmic Problem Solving</li>
         <li>MATLAB (Error Correcting Codes)</li>
         <li>Python</li>
         <li>Java</li>
-        <li>Algorithmic Problem Solving</li>
     </ul>
+</section>
 
+<section>
     <h2>Education</h2>
     <table>
         <tr>
@@ -161,46 +200,50 @@
             <th>CGPA / %</th>
             <th>Year</th>
         </tr>
-
         <tr>
             <td>Ph.D.</td>
             <td>Indian Institute of Technology Hyderabad</td>
             <td>Pursuing</td>
             <td>-</td>
         </tr>
-
         <tr>
             <td>M.Tech (Data Science)</td>
             <td>Indian Institute of Technology Palakkad</td>
             <td>7.95</td>
             <td>2025</td>
         </tr>
-
         <tr>
             <td>B.E</td>
             <td>RV College of Engineering</td>
             <td>6.12</td>
             <td>2021</td>
         </tr>
-
         <tr>
             <td>Class XII</td>
             <td>Narayana College</td>
             <td>96%</td>
             <td>2017</td>
         </tr>
-
         <tr>
             <td>Class X</td>
             <td>Narayana School</td>
-            <td>92%</td>
+            <td>95%</td>
             <td>2015</td>
         </tr>
     </table>
+</section>
 
-    <footer>
-        © 2026 Gopisetty Yeswanth Sai
-    </footer>
+<section>
+    <h2>Academic Activities</h2>
+    <ul>
+        <li>Event Coordinator-head, Ashwa Racing Club 8th Mile 2020</li>
+        <li>Coordinator, Open House 2024</li>
+    </ul>
+</section>
+
+<footer>
+    © 2026 Gopisetty Yeswanth Sai | IIT Hyderabad
+</footer>
 
 </div>
 
