@@ -1,222 +1,243 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Gopisetty Yeswanth Sai | Ph.D Scholar</title>
     <meta charset="UTF-8">
+    <title>G. Yeswanth Sai</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         body {
+            font-family: "Segoe UI", Arial, sans-serif;
             margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #ffffff;
-            color: #222;
-            line-height: 1.7;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 40px 20px;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f5f7fa;
+            color: #333;
         }
 
         header {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-            flex-wrap: wrap;
+            background: #0a192f;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
         }
 
-        header img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
+        header h1 {
+            margin: 0;
+            font-size: 36px;
         }
 
-        h1 {
-            margin-bottom: 5px;
+        header p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+
+        header a {
+            color: #64ffda;
+            text-decoration: none;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
         h2 {
-            border-bottom: 2px solid #ddd;
+            border-bottom: 2px solid #0a192f;
             padding-bottom: 5px;
-            margin-top: 50px;
+            margin-bottom: 20px;
+            color: #0a192f;
+        }
+
+        .profile-pic {
+            display: block;
+            margin: 20px auto;
+            width: 180px;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        ul {
+            padding-left: 20px;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
         }
 
         th, td {
-            border: 1px solid #ddd;
             padding: 10px;
             text-align: left;
         }
 
-        th {
-            background-color: #f2f2f2;
-        }
-
-        ul {
-            margin-top: 10px;
-        }
-
         footer {
-            margin-top: 60px;
-            padding: 20px;
             text-align: center;
-            background: #f5f5f5;
-            font-size: 14px;
+            padding: 20px;
+            background: #0a192f;
+            color: white;
+            margin-top: 40px;
         }
 
-        @media(max-width: 700px){
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
+        a {
+            color: #0a58ca;
         }
     </style>
 </head>
 
 <body>
 
-<div class="container">
-
 <header>
-    <img src="profile.jpg" alt="Profile Photo">
-
-    <div>
-        <h1>Gopisetty Yeswanth Sai</h1>
-        <p>
-            Ph.D. Scholar, Department of Computer Science and Engineering<br>
-            Indian Institute of Technology Hyderabad
-        </p>
-        <p>Email: ysai0158@gmail.com</p>
-        <p>
-        <a href="https://www.linkedin.com/in/gopisetty-yeswanth-sai-5059481a4/" target="_blank">
-        LinkedIn Profile
-        </a>
-        </p>
-
-    </div>
+    <h1>Gopisetty Yeswanth Sai</h1>
+    <p>Ph.D. Scholar, Department of CSE</p>
+    <p>Indian Institute of Technology Hyderabad</p>
+    <p>
+        Email: your_email@iith.ac.in |
+        <a href="linkedin.com/in/gopisetty-yeswanth-sai-5059481a4" target="_blank">LinkedIn</a>
+    </p>
 </header>
 
-<h2>About Me</h2>
-<p>
-I am a Ph.D. scholar working on improving similarity search in practice.
-</p>
+<section>
+    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
 
-<h2>Education</h2>
-<table>
-<tr>
-    <th>Degree / Certificate</th>
-    <th>Institute / Board</th>
-    <th>CGPA / Percentage</th>
-    <th>Year</th>
-</tr>
+    <h2>About Me</h2>
+    <p>
+        I am a first-year Ph.D. scholar in the Department of Computer Science and Engineering
+        at IIT Hyderabad, working under Prof. Rameswar Pratap.
+        My research focuses on improving similarity search in practice.
+    </p>
+</section>
 
-<tr>
-    <td>Ph.D</td>
-    <td>Indian Institute of Technology Hyderabad</td>
-    <td>Pursuing</td>
-    <td>-</td>
-</tr>
+<section>
+    <h2>Research Interests</h2>
+    <ul>
+        <li>Similarity Search</li>
+        <li>Distributed Storage and MDS Codes</li>
+        <li>Access-Optimal Convertible Codes</li>
+        <li>Coding Theory and Error Correcting Codes</li>
+        <li>Efficient Algorithm Design</li>
+    </ul>
+</section>
 
-<tr>
-    <td>M.Tech (Data Science)</td>
-    <td>Indian Institute of Technology Palakkad</td>
-    <td>7.95</td>
-    <td>2025</td>
-</tr>
+<section>
+    <h2>Publications</h2>
 
-<tr>
-    <td>B.E</td>
-    <td>RV College of Engineering</td>
-    <td>6.12</td>
-    <td>2021</td>
-</tr>
+    <p>
+        <strong>On Linear Field Size Access-Optimal MDS Convertible Codes</strong><br>
+        M. Nikhil Krishnan; Myna Vajha; Vinayak Ramkumar; G. Yeswanth Sai; Xiangliang Kong<br>
+        IEEE International Symposium, 2025.<br>
+        <a href="https://ieeexplore.ieee.org/document/11195314" target="_blank">
+            View on IEEE Xplore
+        </a>
+    </p>
+</section>
 
-<tr>
-    <td>Class XII</td>
-    <td>Narayana College</td>
-    <td>96%</td>
-    <td>2017</td>
-</tr>
+<section>
+    <h2>Projects</h2>
 
-<tr>
-    <td>Class X</td>
-    <td>Narayana School</td>
-    <td>95%</td>
-    <td>2015</td>
-</tr>
-</table>
+    <p>
+        <strong>On Low Field Size Constructions of Access-Optimal Convertible Codes</strong><br>
+        Jun 2024 – Feb 2025 | PG Project<br>
+        Guide: Dr. Nikhil Krishnan M<br>
+        Contributed to the development of efficient code conversion techniques in large-scale
+        storage systems. Focused on reducing field size requirements and optimizing
+        super-regularity of Vandermonde matrices in systematic MDS codes.
+    </p>
 
-<h2>Research Interests</h2>
-<ul>
-    <li>Similarity Search</li>
-    <li>Coding theory</li>
-    <li>Scalable Machine Learning Systems</li>
-    <li>Data Science and Big Data Analytics</li>
-</ul>
+    <p>
+        <strong>Image Classification with Text and Graph Integration</strong><br>
+        Mar 2024 – May 2024 | Course Project<br>
+        Guide: Dr. Mrinal Kanti Das<br>
+        Developed a multimodal deep learning system combining visual and textual features.
+        Used Flickr30k/8k datasets with BERT and InceptionV3 for improved classification accuracy.
+    </p>
 
-<h2>Technical Skills</h2>
-<ul>
-    <li><strong>Coding Theory:</strong> Design and analysis of linear codes, cyclic codes, Reed-Solomon codes, encoding/decoding algorithms, and performance evaluation.</li>
-    <li>Efficient MATLAB programming for implementation and analysis of error-correcting codes.</li>
-    <li>Problem Solving in Java (HackerRank Certified).</li>
-    <li>Python Problem Solving (HackerRank).</li>
-    <li>Strong algorithmic problem-solving skills.</li>
-</ul>
+    <p>
+        <strong>Route Planning using Reinforcement Learning and Battery Optimization in PHEVs</strong><br>
+        Jan 2021 – Apr 2021 | UG Project<br>
+        Guide: Prof. Shantha Rangaswamy<br>
+        Designed a 2D grid-based RL system using Q-learning and SARSA
+        to compute optimal routes and optimize battery usage in plug-in hybrid vehicles.
+    </p>
 
-<h2>Projects</h2>
+</section>
 
-<p><strong>On Low Field Size Constructions of Access-Optimal Convertible Codes</strong><br>
-Jun 2024 – Feb 2025 | Guide: Dr. Nikhil Krishnan M (PG Project)<br>
-Worked on efficient code conversion techniques in large-scale distributed storage systems. 
-Focused on reducing field size requirements for access-optimal convertible codes and optimizing 
-super-regularity properties in systematic MDS codes.
-</p>
+<section>
+    <h2>Technical Skills</h2>
+    <ul>
+        <li>Coding Theory (Linear Codes, MDS Codes, Reed-Solomon Codes)</li>
+        <li>MATLAB – Efficient implementation of error-correcting codes</li>
+        <li>Python (Problem Solving – HackerRank)</li>
+        <li>Java (Problem Solving – HackerRank)</li>
+        <li>Algorithmic Problem Solving</li>
+    </ul>
+</section>
 
-<p><strong>Image Classification with Text and Graph Integration</strong><br>
-Mar 2024 – May 2024 | Guide: Dr. Mrinal Kanti Das (Course Project)<br>
-Developed a multimodal deep learning system integrating visual and textual data using Flickr8k/30k datasets. 
-Explored BERT and Inception v3 architectures to improve classification performance.
-</p>
+<section>
+    <h2>Education</h2>
 
-<p><strong>Route Planning using Reinforcement Learning and Battery Optimization in PHEVs</strong><br>
-Jan 2021 – Apr 2021 | Guide: Prof. Shantha Rangaswamy (UG Project)<br>
-Designed an optimal routing system in a 2D environment and optimized battery utilization 
-for plug-in hybrid electric vehicles.
-</p>
+    <table>
+        <tr>
+            <th>Degree</th>
+            <th>Institute</th>
+            <th>CGPA / %</th>
+            <th>Year</th>
+        </tr>
 
-<h2>Publications</h2>
+        <tr>
+            <td>Ph.D.</td>
+            <td>Indian Institute of Technology Hyderabad</td>
+            <td>Pursuing</td>
+            <td>-</td>
+        </tr>
 
-<p>
-M. Nikhil Krishnan, Myna Vajha, Vinayak Ramkumar, <strong>G. Yeswanth Sai</strong>, Xiangliang Kong.<br>
-<strong>
-<a href="https://ieeexplore.ieee.org/document/11195314" target="_blank">
-On Linear Field Size Access-Optimal MDS Convertible Codes
-</a>
-</strong><br>
-2025 IEEE International Symposium (IEEE).<br>
-Publisher: IEEE | Available on IEEE Xplore.
-</p>
+        <tr>
+            <td>M.Tech (Data Science)</td>
+            <td>Indian Institute of Technology Palakkad</td>
+            <td>7.95</td>
+            <td>2025</td>
+        </tr>
 
-<h2>Extra Curricular Activities</h2>
-<ul>
-    <li>Coordinator, Open House 2024 – Organized and managed institute-level events.</li>
-    <li>Event Coordinator – Led Ashwa Racing Club 8th Mile 2020.</li>
-</ul>
+        <tr>
+            <td>B.E</td>
+            <td>RV College of Engineering</td>
+            <td>6.12</td>
+            <td>2021</td>
+        </tr>
+
+        <tr>
+            <td>Class XII</td>
+            <td>Narayana College</td>
+            <td>96%</td>
+            <td>2017</td>
+        </tr>
+
+        <tr>
+            <td>Class X</td>
+            <td>Narayana School</td>
+            <td>92%</td>
+            <td>2015</td>
+        </tr>
+
+    </table>
+</section>
+
+<section>
+    <h2>Academic Activities</h2>
+    <ul>
+        <li>Event Coordinator,Led Ashwa Racing Club 8th Mile 2020</li>
+        <li>Coordinator, Open House 2024</li>
+    </ul>
+</section>
 
 <footer>
-© 2026 Gopisetty Yeswanth Sai | Ph.D Scholar
+    © 2026 Gopisetty Yeswanth Sai | IIT Hyderabad
 </footer>
 
-</div>
-
 </body>
-
 </html>
