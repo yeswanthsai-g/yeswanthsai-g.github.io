@@ -9,75 +9,73 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
-            background-color: #f5f7fa;
-            color: #333;
+            background-color: #ffffff;
+            color: #222;
+            line-height: 1.7;
         }
 
-        /* HERO SECTION */
-        .hero {
-            background: linear-gradient(135deg, #1f4037, #99f2c8);
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
         }
 
-        .hero img {
+        header {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        header img {
             width: 180px;
             height: 180px;
             border-radius: 50%;
-            border: 5px solid white;
             object-fit: cover;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-            margin-bottom: 20px;
         }
 
-        .hero h1 {
-            margin: 10px 0;
-            font-size: 36px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            margin: 5px 0;
-        }
-
-        /* SECTION STYLE */
-        section {
-            max-width: 900px;
-            margin: 50px auto;
-            padding: 0 20px;
+        h1 {
+            margin-bottom: 5px;
         }
 
         h2 {
-            color: #1f4037;
-            border-bottom: 3px solid #99f2c8;
-            display: inline-block;
+            border-bottom: 2px solid #ddd;
             padding-bottom: 5px;
-        }
-
-        ul {
-            line-height: 1.8;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            margin-top: 20px;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px;
-            background: #1f4037;
-            color: white;
             margin-top: 50px;
         }
 
-        @media(max-width: 600px){
-            .hero h1 {
-                font-size: 26px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        ul {
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 20px;
+            text-align: center;
+            background: #f5f5f5;
+            font-size: 14px;
+        }
+
+        @media(max-width: 700px){
+            header {
+                flex-direction: column;
+                text-align: center;
             }
         }
     </style>
@@ -85,69 +83,136 @@
 
 <body>
 
-<!-- HERO SECTION -->
-<div class="hero">
+<div class="container">
+
+<header>
     <img src="profile.jpg" alt="Profile Photo">
-    <h1>Gopisetti Yeswanth Sai</h1>
-    <p>Ph.D. Scholar | Computer Science and Engineering</p>
-    <p>Indian Institute of Technology Hyderabad</p>
-    <p>Research Area: Similarity Search in Practice</p>
-</div>
 
-<!-- ABOUT -->
-<section>
-    <h2>About Me</h2>
-    <div class="card">
+    <div>
+        <h1>Gopisetti Yeswanth Sai</h1>
         <p>
-            I am a first-year Ph.D. scholar working on improving similarity search 
-            in real-world large-scale systems. My research focuses on building 
-            efficient and scalable nearest neighbor search methods for 
-            high-dimensional data.
+            Ph.D. Scholar, Department of Computer Science and Engineering<br>
+            Indian Institute of Technology Hyderabad
         </p>
-    </div>
-</section>
-
-<!-- RESEARCH -->
-<section>
-    <h2>Research Interests</h2>
-    <div class="card">
-        <ul>
-            <li>Similarity Search</li>
-            <li>Approximate Nearest Neighbor (ANN)</li>
-            <li>High-Dimensional Indexing</li>
-            <li>Large-Scale Machine Learning Systems</li>
-            <li>Data Science & Big Data Analytics</li>
-        </ul>
-    </div>
-</section>
-
-<!-- EDUCATION -->
-<section>
-    <h2>Education</h2>
-    <div class="card">
-        <p><strong>Ph.D. – CSE</strong> (2025–Present)<br>
-        IIT Hyderabad</p>
-
-        <p><strong>M.Tech – Data Science</strong> (2025)<br>
-        IIT Palakkad | CGPA: 7.95</p>
-
-        <p><strong>B.E. – Computer Science</strong> (2021)<br>
-        RV College of Engineering | CGPA: 6.20</p>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section>
-    <h2>Contact</h2>
-    <div class="card">
         <p>Email: ysai0158@gmail.com</p>
-        <p>Location: Hyderabad, India</p>
     </div>
-</section>
+</header>
+
+<h2>About Me</h2>
+<p>
+I am a Ph.D. scholar working on improving similarity search in practice, 
+focusing on scalable and efficient Approximate Nearest Neighbor (ANN) systems 
+for high-dimensional large-scale datasets.
+</p>
+
+<h2>Education</h2>
+<table>
+<tr>
+    <th>Degree / Certificate</th>
+    <th>Institute / Board</th>
+    <th>CGPA / Percentage</th>
+    <th>Year</th>
+</tr>
+
+<tr>
+    <td>Ph.D</td>
+    <td>Indian Institute of Technology Hyderabad</td>
+    <td>Pursuing</td>
+    <td>-</td>
+</tr>
+
+<tr>
+    <td>M.Tech (Data Science)</td>
+    <td>Indian Institute of Technology Palakkad</td>
+    <td>7.95</td>
+    <td>2025</td>
+</tr>
+
+<tr>
+    <td>B.E</td>
+    <td>RV College of Engineering</td>
+    <td>6.12</td>
+    <td>2021</td>
+</tr>
+
+<tr>
+    <td>Class XII</td>
+    <td>Narayana College</td>
+    <td>96%</td>
+    <td>2017</td>
+</tr>
+
+<tr>
+    <td>Class X</td>
+    <td>Narayana School</td>
+    <td>92%</td>
+    <td>2015</td>
+</tr>
+</table>
+
+<h2>Research Interests</h2>
+<ul>
+    <li>Similarity Search</li>
+    <li>Approximate Nearest Neighbor (ANN)</li>
+    <li>High-Dimensional Indexing</li>
+    <li>Large-Scale Machine Learning Systems</li>
+    <li>Data Science and Big Data Analytics</li>
+</ul>
+
+<h2>Technical Skills</h2>
+
+<p><strong>Coding Theory</strong><br>
+Coding Theory explores the design and analysis of error-correcting codes for reliable data transmission and storage. 
+It includes linear codes, cyclic codes, Reed-Solomon codes, encoding and decoding algorithms, and performance analysis.
+</p>
+
+<ul>
+    <li>Problem Solving in Java (HackerRank)</li>
+    <li>Python Problem Solving (HackerRank)</li>
+    <li>Problem Solving Certificate – HackerRank</li>
+</ul>
+
+<h2>Projects</h2>
+
+<p><strong>On Low Field Size Constructions of Access-Optimal Convertible Codes</strong><br>
+Jun 2024 – Feb 2025<br>
+Guide: Dr. Nikhil Krishnan M<br>
+PG Project<br>
+Contributed to the development of efficient code conversion techniques in large-scale storage systems. 
+Focused on reducing field size requirements for access-optimal convertible codes and optimizing 
+super-regularity of Vandermonde matrices in systematic MDS codes.
+</p>
+
+<p><strong>Image Classification with Text and Graph Integration</strong><br>
+Mar 2024 – May 2024<br>
+Guide: Dr. Mrinal Kanti Das<br>
+Course Project<br>
+Developed a multimodal deep learning system integrating textual and visual data using Flickr8k/30k datasets. 
+Explored BERT and Inception v3 models to improve classification accuracy.
+</p>
+
+<p><strong>Route Planning using Reinforcement Learning and Battery Optimization in PHEVs</strong><br>
+Jan 2021 – Apr 2021<br>
+Guide: Prof. Shantha Rangaswamy<br>
+UG Project<br>
+Designed a system to compute optimal routes in a 2D virtual environment and optimize battery usage 
+for plug-in hybrid electric vehicles.
+</p>
+
+<h2>Publications</h2>
+<p>Research manuscripts under preparation in similarity search and indexing systems.</p>
+
+<h2>Extra Curricular Activities</h2>
+<ul>
+    <li>Coordinator, Open House 2024 – Organized and managed institutional events.</li>
+    <li>Event Coordinator – Led Ashwa Racing Club 8th Mile 2020.</li>
+</ul>
 
 <footer>
-    © 2026 Gopisetty Yeswanth Sai | Ph.D Scholar
+© 2026 Gopisetti Yeswanth Sai | Ph.D Scholar
 </footer>
+
+</div>
 
 </body>
 </html>
